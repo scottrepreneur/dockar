@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  ar-memdues:
+    container_name: ar-memdues2
+    build: .
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - ./:/home/dockar
+    ports:
+      - "3000:3000"
+    command: "/bin/bash"
